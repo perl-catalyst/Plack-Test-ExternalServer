@@ -7,7 +7,7 @@ package Plack::Test::ExternalServer;
 our $VERSION = '0.02';
 
 use URI;
-use Carp;
+use Carp ();
 use LWP::UserAgent;
 
 =head1 SYNOPSIS
@@ -54,7 +54,7 @@ test_psgi
 sub test_psgi {
     my %args = @_;
 
-    my $client = delete $args{client} or croak 'client test code needed';
+    my $client = delete $args{client} or Carp::croak 'client test code needed';
     my $ua     = delete $args{ua} || LWP::UserAgent->new;
     my $base   = $ENV{PLACK_TEST_EXTERNALSERVER_URI} || delete $args{uri};
        $base   = URI->new($base) if $base;
