@@ -4,7 +4,7 @@ use warnings;
 package Plack::Test::ExternalServer;
 # ABSTRACT: Run HTTP tests on external live servers
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use URI;
 use Carp ();
