@@ -1,2 +1,7 @@
-0.01  Fri, 15 Jan 2010 18:37:21 +0100
-  * Initial release.
+Revision history for Plack-Test-ExternalServer
+
+{{$NEXT}}
+  - added META.json and other modern tooling
+
+0.01      2010-01-15 17:37:21Z
+  - Initial release.

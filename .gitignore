@@ -1,8 +1,6 @@
-.*
-!.gitignore
-build
-MANIFEST*
-!MANIFEST.SKIP
-Debian*
-README
-Plack-Test-ExternalServer-*
+/.ackrc
+/.build/
+!/.gitignore
+/.latest
+/Plack-Test-ExternalServer-*/
+/Plack-Test-ExternalServer-*.tar.gz
